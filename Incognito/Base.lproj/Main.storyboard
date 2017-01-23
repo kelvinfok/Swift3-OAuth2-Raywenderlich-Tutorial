@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Incognito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-4c-Ym0">
+                                <rect key="frame" x="-32" y="-32" width="407" height="699"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hat_image" translatesAutoresizingMaskIntoConstraints="NO" id="y2R-Cg-MAc">
+                                <rect key="frame" x="99.5" y="256.5" width="163" height="121"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="Hst-mO-O6a"/>
+                                    <constraint firstAttribute="width" constant="163" id="Xbs-7n-afz"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DMR-Uu-f2I" appends="YES" id="ky0-EM-OpM"/>
+                                    <outletCollection property="gestureRecognizers" destination="1Rf-9V-x7O" appends="YES" id="RTg-fs-rSG"/>
+                                    <outletCollection property="gestureRecognizers" destination="Os0-0V-Ues" appends="YES" id="FaK-0H-36R"/>
+                                </connections>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mustache_image" translatesAutoresizingMaskIntoConstraints="NO" id="Oa5-fV-eXG">
+                                <rect key="frame" x="60.5" y="262.5" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="KT0-cr-f5R"/>
+                                    <constraint firstAttribute="width" constant="240" id="x2z-x5-WVu"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FXa-wn-KJa" appends="YES" id="ZxE-Ju-txQ"/>
+                                    <outletCollection property="gestureRecognizers" destination="imf-57-Mca" appends="YES" id="tXu-c0-E8b"/>
+                                    <outletCollection property="gestureRecognizers" destination="rim-2x-x3x" appends="YES" id="93v-A3-Je6"/>
+                                </connections>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glasses_image" translatesAutoresizingMaskIntoConstraints="NO" id="oUH-8d-Mgj" userLabel="glasses">
+                                <rect key="frame" x="100.5" y="274.5" width="162" height="103"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="f5g-sh-zx8"/>
+                                    <constraint firstAttribute="height" constant="103" id="lS8-r9-6Un"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MVo-Hu-19q" appends="YES" id="Tj5-F0-2ZZ"/>
+                                    <outletCollection property="gestureRecognizers" destination="M16-WO-xx4" appends="YES" id="n9X-Wi-smP"/>
+                                    <outletCollection property="gestureRecognizers" destination="Bcx-ND-cs5" appends="YES" id="EZZ-jn-KbE"/>
+                                </connections>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="0uL-Ez-9mw">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem image="camera_icon" id="ijF-ut-veV">
+                                        <color key="tintColor" red="0.79556155204772949" green="0.0" blue="0.14415968954563141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="openCamera:" destination="BYZ-38-t0r" id="vUk-uY-7B8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="X6l-iD-V2G"/>
+                                    <barButtonItem image="hat_icon" id="vJo-Xo-NcR">
+                                        <color key="tintColor" red="0.79556155204772949" green="0.0" blue="0.14415968954563141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="hideShowHat:" destination="BYZ-38-t0r" id="gRI-2n-t8C"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dze-GU-cs3"/>
+                                    <barButtonItem image="glasses_icon" id="yHr-0B-Z5V">
+                                        <color key="tintColor" red="0.79556155204772949" green="0.0" blue="0.14415968954563141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="hideShowGlasses:" destination="BYZ-38-t0r" id="pIS-4y-sEt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SFf-3W-dVp"/>
+                                    <barButtonItem image="mustache_icon" id="Y1q-0d-Azy">
+                                        <color key="tintColor" red="0.79556155204772949" green="0.0" blue="0.14415968954563141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="hideShowMoustache:" destination="BYZ-38-t0r" id="o0z-5L-tr1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oNM-YR-FJX"/>
+                                    <barButtonItem systemItem="action" id="CIX-sg-WIu">
+                                        <color key="tintColor" red="0.79556155204772949" green="0.0" blue="0.14415968954563141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="share:" destination="BYZ-38-t0r" id="oRN-TM-Q3r"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jRg-4c-Ym0" firstAttribute="centerX" secondItem="y2R-Cg-MAc" secondAttribute="centerX" constant="-9.5" id="AC5-m1-NAb"/>
+                            <constraint firstAttribute="centerY" secondItem="Oa5-fV-eXG" secondAttribute="centerY" constant="7" id="G7Z-Jn-3zf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jRg-4c-Ym0" secondAttribute="bottom" id="JnR-Oc-3BD"/>
+                            <constraint firstItem="jRg-4c-Ym0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-16" id="O4o-cK-1Mm"/>
+                            <constraint firstItem="jRg-4c-Ym0" firstAttribute="centerY" secondItem="y2R-Cg-MAc" secondAttribute="centerY" constant="0.5" id="V6h-1c-Ke7"/>
+                            <constraint firstAttribute="centerX" secondItem="Oa5-fV-eXG" secondAttribute="centerX" constant="7" id="W5O-09-fAt"/>
+                            <constraint firstItem="jRg-4c-Ym0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-16" id="YrZ-Hh-9Bw"/>
+                            <constraint firstItem="0uL-Ez-9mw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="aFf-3j-3XX"/>
+                            <constraint firstAttribute="centerY" secondItem="oUH-8d-Mgj" secondAttribute="centerY" constant="7.5" id="f74-tt-5qz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jRg-4c-Ym0" secondAttribute="bottom" id="n6H-EQ-GUc"/>
+                            <constraint firstAttribute="centerX" secondItem="oUH-8d-Mgj" secondAttribute="centerX" constant="6" id="pEZ-ZN-yuq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0uL-Ez-9mw" secondAttribute="bottom" id="yKP-89-K6w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jRg-4c-Ym0" secondAttribute="trailing" constant="-16" id="yf5-lB-jMx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0uL-Ez-9mw" secondAttribute="trailing" constant="-16" id="zfu-X4-ay5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="glassesImage" destination="oUH-8d-Mgj" id="FUh-vn-yeB"/>
+                        <outlet property="hatImage" destination="y2R-Cg-MAc" id="Pee-aq-jww"/>
+                        <outlet property="imageView" destination="jRg-4c-Ym0" id="t3n-Wf-2yQ"/>
+                        <outlet property="moustacheImage" destination="Oa5-fV-eXG" id="ghu-1f-fUB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DMR-Uu-f2I">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="xGX-65-w4m"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="S4W-01-vVv"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="1Rf-9V-x7O">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="gdO-aT-7fe"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="bUz-x6-hYk"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Os0-0V-Ues">
+                    <connections>
+                        <action selector="rotate:" destination="BYZ-38-t0r" id="ULF-US-jpD"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="DO6-Nn-rSk"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="MVo-Hu-19q">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="37i-Ev-Zee"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="M16-WO-xx4">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="PI9-Dv-7zt"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Bcx-ND-cs5">
+                    <connections>
+                        <action selector="rotate:" destination="BYZ-38-t0r" id="oL5-Ba-6Jg"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="FXa-wn-KJa">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="Tzw-yK-KJ5"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="imf-57-Mca">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="GLi-aY-SJL"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="rim-2x-x3x">
+                    <connections>
+                        <action selector="rotate:" destination="BYZ-38-t0r" id="2QF-Sy-kT3"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera_icon" width="32" height="32"/>
+        <image name="glasses_icon" width="32" height="32"/>
+        <image name="glasses_image" width="700" height="234"/>
+        <image name="hat_icon" width="32" height="32"/>
+        <image name="hat_image" width="3653" height="3410"/>
+        <image name="mustache_icon" width="32" height="32"/>
+        <image name="mustache_image" width="600" height="194"/>
+    </resources>
+</document>
